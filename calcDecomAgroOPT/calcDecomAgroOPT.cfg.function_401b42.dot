@@ -1,0 +1,34 @@
+digraph "Control-flow graph for function 'function_401b42(a1)'." {
+  label="Control-flow graph for function 'function_401b42(a1)'.";
+  node [shape=record];
+
+  Node000001DDBF40E0A0 [label="{entry:\l  a1\l}"];
+  Node000001DDBF40E0A0 -> Node000001DDBF40EF10;
+  Node000001DDBF40EF10 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  v56\l  v57\l  v58\l  v59\l}"];
+  Node000001DDBF40EF10 -> Node000001DDBF40EFF0;
+  Node000001DDBF40EFF0 [label="{  if ((v58 != -529697949) or (v59 != 3)):\l}"];
+  Node000001DDBF40EFF0 -> Node000001DDBF40F300 [label="(v58 != -529697949) or (v59 != 3)"];
+  Node000001DDBF40EFF0 -> Node000001DDBF40EC70 [label="(v58 == -529697949) and (v59 == 3)"];
+  Node000001DDBF40F300 [label="{0x401b7d:\l  return 0\l}"];
+  Node000001DDBF40F300 -> Node000001DDBF40E110;
+  Node000001DDBF40EC70 [label="{0x401b58:\l  v60\l}"];
+  Node000001DDBF40EC70 -> Node000001DDBF40DD90;
+  Node000001DDBF40E110 [label="{exit:\l}"];
+  Node000001DDBF40DD90 [label="{  if (v60 != 429065504):\l}"];
+  Node000001DDBF40DD90 -> Node000001DDBF40F220 [label="v60 != 429065504"];
+  Node000001DDBF40DD90 -> Node000001DDBF40E960 [label="v60 == 429065504"];
+  Node000001DDBF40F220 [label="{  if (v60 != 429065505):\l}"];
+  Node000001DDBF40F220 -> Node000001DDBF40DE70 [label="v60 != 429065505"];
+  Node000001DDBF40F220 -> Node000001DDBF40E960 [label="v60 == 429065505"];
+  Node000001DDBF40E960 [label="{0x401b77:\l  v61\l  _3f_terminate_40__40_YAXXZ(v61)\l  return 0\l}"];
+  Node000001DDBF40E960 -> Node000001DDBF40E110;
+  Node000001DDBF40DE70 [label="{  if (v60 != 429065506):\l}"];
+  Node000001DDBF40DE70 -> Node000001DDBF40F290 [label="v60 != 429065506"];
+  Node000001DDBF40DE70 -> Node000001DDBF40E960;
+  Node000001DDBF40F290 [label="{  if (v60 != 26820608):\l}"];
+  Node000001DDBF40F290 -> Node000001DDBF40E8F0 [label="v60 != 26820608"];
+  Node000001DDBF40F290 -> Node000001DDBF40E960;
+  Node000001DDBF40E8F0 [label="{0x401b7d:\l  return 0\l}"];
+  Node000001DDBF40E8F0 -> Node000001DDBF40E110;
+
+}

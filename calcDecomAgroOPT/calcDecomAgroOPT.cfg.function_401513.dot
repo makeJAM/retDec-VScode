@@ -1,0 +1,40 @@
+digraph "Control-flow graph for function 'function_401513()'." {
+  label="Control-flow graph for function 'function_401513()'.";
+  node [shape=record];
+
+  Node000001DDBF2E3430 [label="{entry:\l}"];
+  Node000001DDBF2E3430 -> Node000001DDBF2E3510;
+  Node000001DDBF2E3510 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49 = BitCastExpr\<ptr\>(&(v48))\l  v50\l  v51 = BitCastExpr\<ptr\>(&(v50))\l  v52 = 0\l  v53 = 0\l  v54 = 0\l  v55\l}"];
+  Node000001DDBF2E3510 -> Node000001DDBF2E2FD0;
+  Node000001DDBF2E2FD0 [label="{  if (EventRegister(v51, IntToPtrCastExpr\<ptr\>(4199568), &(v55), v49) == 0):\l}"];
+  Node000001DDBF2E2FD0 -> Node000001DDBF2E2940 [label="EventRegister(v51, IntToPtrCastExpr\<ptr\>(4199568), &(v55), v49) == 0"];
+  Node000001DDBF2E2FD0 -> Node000001DDBF2E27F0 [label="EventRegister(v51, IntToPtrCastExpr\<ptr\>(4199568), &(v55), v49) != 0"];
+  Node000001DDBF2E2940 [label="{  v56 = *(BitCastExpr\<ptr\>(&(v48)))\l  v57\l  v58\l  EventSetInformation(ExtCastExpr\<int64\>(v56), v58, IntToPtrCastExpr\<ptr\>(2), PtrToIntCastExpr\<int32\>(&(v57)))\l}"];
+  Node000001DDBF2E2940 -> Node000001DDBF2E3270;
+  Node000001DDBF2E27F0 [label="{0x401581:\l  v59\l}"];
+  Node000001DDBF2E27F0 -> Node000001DDBF2E2320;
+  Node000001DDBF2E3270 [label="{exit:\l}"];
+  Node000001DDBF2E2320 [label="{  if (v55 \>= 6):\l}"];
+  Node000001DDBF2E2320 -> Node000001DDBF2E2B70 [label="v55 \>= 6"];
+  Node000001DDBF2E2320 -> Node000001DDBF2E3580 [label="v55 \< 6"];
+  Node000001DDBF2E2B70 [label="{0x401591:\l  v60\l}"];
+  Node000001DDBF2E2B70 -> Node000001DDBF2E37B0;
+  Node000001DDBF2E3580 [label="{0x40164d:\l  ShellExecuteW(&(v59), BitCastExpr\<ptr\>(&(v59)), BitCastExpr\<ptr\>(&(v59)), BitCastExpr\<ptr\>(&(v59)), BitCastExpr\<ptr\>(&(v59)), PtrToIntCastExpr\<int32\>(&(v59)))\l  return function_401680(PtrToIntCastExpr\<int32\>(&(v59)))\l}"];
+  Node000001DDBF2E3580 -> Node000001DDBF2E3270;
+  Node000001DDBF2E37B0 [label="{  if ((v52 or (v60 & 131072)) != 0):\l}"];
+  Node000001DDBF2E37B0 -> Node000001DDBF2E2240 [label="(v52 or (v60 & 131072)) != 0"];
+  Node000001DDBF2E37B0 -> Node000001DDBF2E3580 [label="(v52 or (v60 & 131072)) == 0"];
+  Node000001DDBF2E2240 [label="{0x4015a8:\l  v61\l}"];
+  Node000001DDBF2E2240 -> Node000001DDBF2E4D90;
+  Node000001DDBF2E4D90 [label="{  if (v52 == v61):\l}"];
+  Node000001DDBF2E4D90 -> Node000001DDBF2E45B0 [label="v52 == v61"];
+  Node000001DDBF2E4D90 -> Node000001DDBF2E3580;
+  Node000001DDBF2E45B0 [label="{  v62\l}"];
+  Node000001DDBF2E45B0 -> Node000001DDBF2E3B30;
+  Node000001DDBF2E3B30 [label="{  if ((v62 & 131072) == v62):\l}"];
+  Node000001DDBF2E3B30 -> Node000001DDBF2E5340 [label="(v62 & 131072) == v62"];
+  Node000001DDBF2E3B30 -> Node000001DDBF2E3270 [label="(v62 & 131072) != v62"];
+  Node000001DDBF2E5340 [label="{0x4015c6:\l  v63\l  EventWriteTransfer(184549393, IntToPtrCastExpr\<ptr\>(ExtCastExpr\<int32\>(v63)), IntToPtrCastExpr\<ptr\>(v52), IntToPtrCastExpr\<ptr\>(131072), PtrToIntCastExpr\<int32\>(&(v59)), BitCastExpr\<ptr\>(&(v59)))\l}"];
+  Node000001DDBF2E5340 -> Node000001DDBF2E3270;
+
+}

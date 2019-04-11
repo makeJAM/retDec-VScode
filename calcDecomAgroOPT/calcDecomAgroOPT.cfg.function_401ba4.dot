@@ -1,0 +1,34 @@
+digraph "Control-flow graph for function 'function_401ba4(a1)'." {
+  label="Control-flow graph for function 'function_401ba4(a1)'.";
+  node [shape=record];
+
+  Node000001DDBF40EE30 [label="{entry:\l  a1\l}"];
+  Node000001DDBF40EE30 -> Node000001DDBF40E2D0;
+  Node000001DDBF40E2D0 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  v56\l  v57\l  function_401dc0(4202112, 12, PtrToIntCastExpr\<int32\>(&(v57)))\l  v58\l  result\l}"];
+  Node000001DDBF40E2D0 -> Node000001DDBF40E490;
+  Node000001DDBF40E490 [label="{  if (v58 == 0):\l}"];
+  Node000001DDBF40E490 -> Node000001DDBF40FCA0 [label="v58 == 0"];
+  Node000001DDBF40E490 -> Node000001DDBF40EF80 [label="v58 != 0"];
+  Node000001DDBF40FCA0 [label="{0x401c04:\l  result = function_401e05(PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)))\l  return result\l}"];
+  Node000001DDBF40FCA0 -> Node000001DDBF40EEA0;
+  Node000001DDBF40EF80 [label="{  if (v58 == -1):\l}"];
+  Node000001DDBF40EF80 -> Node000001DDBF411280 [label="v58 == -1"];
+  Node000001DDBF40EF80 -> Node000001DDBF40E570 [label="v58 != -1"];
+  Node000001DDBF40EEA0 [label="{exit:\l}"];
+  Node000001DDBF411280 [label="{0x401c04:\l  result = function_401e05(PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)))\l  return result\l}"];
+  Node000001DDBF411280 -> Node000001DDBF40EEA0;
+  Node000001DDBF40E570 [label="{0x401bbe:\l  if (*(IntToPtrCastExpr\<ptr\>(v58)) == 23117):\l}"];
+  Node000001DDBF40E570 -> Node000001DDBF411050 [label="*(IntToPtrCastExpr\<ptr\>(v58)) == 23117"];
+  Node000001DDBF40E570 -> Node000001DDBF40FA00 [label="*(IntToPtrCastExpr\<ptr\>(v58)) != 23117"];
+  Node000001DDBF411050 [label="{0x401bcb:\l  v59\l}"];
+  Node000001DDBF411050 -> Node000001DDBF410020;
+  Node000001DDBF40FA00 [label="{0x401c04:\l  result = function_401e05(PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)), PtrToIntCastExpr\<int32\>(&(v57)))\l  return result\l}"];
+  Node000001DDBF40FA00 -> Node000001DDBF40EEA0;
+  Node000001DDBF410020 [label="{  if (v59 \>= 0):\l}"];
+  Node000001DDBF410020 -> Node000001DDBF410CD0 [label="v59 \>= 0"];
+  Node000001DDBF410020 -> Node000001DDBF40FA00 [label="v59 \< 0"];
+  Node000001DDBF410CD0 [label="{  if (v59 \< 268435456):\l}"];
+  Node000001DDBF410CD0 -> Node000001DDBF40FA00;
+  Node000001DDBF410CD0 -> Node000001DDBF40FA00 [label="v59 \< 268435456"];
+
+}

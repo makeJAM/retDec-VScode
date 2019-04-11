@@ -1,0 +1,30 @@
+digraph "Control-flow graph for function 'function_401799()'." {
+  label="Control-flow graph for function 'function_401799()'.";
+  node [shape=record];
+
+  Node000001DDBF20BCC0 [label="{entry:\l}"];
+  Node000001DDBF20BCC0 -> Node000001DDBF20B7F0;
+  Node000001DDBF20B7F0 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  lpPerformanceCount = 0\l  v56\l  v57\l}"];
+  Node000001DDBF20B7F0 -> Node000001DDBF204F60;
+  Node000001DDBF204F60 [label="{  if (v56 != 0):\l}"];
+  Node000001DDBF204F60 -> Node000001DDBF205580 [label="v56 != 0"];
+  Node000001DDBF204F60 -> Node000001DDBF204710 [label="v56 == 0"];
+  Node000001DDBF205580 [label="{  if (v56 != -1153374642):\l}"];
+  Node000001DDBF205580 -> Node000001DDBF3A54B0 [label="v56 != -1153374642"];
+  Node000001DDBF205580 -> Node000001DDBF204710 [label="v56 == -1153374642"];
+  Node000001DDBF204710 [label="{0x4017bd:\l  lpSystemTimeAsFileTime\l  GetSystemTimeAsFileTime(BitCastExpr\<ptr\>(&(lpSystemTimeAsFileTime)))\l  v58\l  v59 = (lpSystemTimeAsFileTime ^ v58)\l  processId = GetCurrentProcessId()\l  threadId = GetCurrentThreadId()\l  v60 = GetTickCount()\l  v61\l  v61 = (((threadId ^ (processId ^ v59)) ^ PtrToIntCastExpr\<int32\>(&(v61))) ^ v60)\l  QueryPerformanceCounter(BitCastExpr\<ptr\>(&(lpPerformanceCount)))\l  v62 = (v61 ^ lpPerformanceCount)\l  v63\l}"];
+  Node000001DDBF204710 -> Node000001DDBF205820;
+  Node000001DDBF3A54B0 [label="{0x401812:\l  v57 = (-1 - v56)\l  result\l  return result\l}"];
+  Node000001DDBF3A54B0 -> Node000001DDBF20B470;
+  Node000001DDBF205820 [label="{  if (v62 == 0):\l  else:\l}"];
+  Node000001DDBF205820 -> Node000001DDBF3A5280 [label="v62 == 0"];
+  Node000001DDBF205820 -> Node000001DDBF3A4410 [label="v62 != 0"];
+  Node000001DDBF20B470 [label="{exit:\l}"];
+  Node000001DDBF3A5280 [label="{0x40180a:\l  v63 = -1153374642\l}"];
+  Node000001DDBF3A5280 -> Node000001DDBF209330;
+  Node000001DDBF3A4410 [label="{  v63 = v62\l}"];
+  Node000001DDBF3A4410 -> Node000001DDBF209330;
+  Node000001DDBF209330 [label="{0x40180c:\l  v56 = v63\l  v57 = (-1 - v63)\l  return lpPerformanceCount\l}"];
+  Node000001DDBF209330 -> Node000001DDBF20B470;
+
+}

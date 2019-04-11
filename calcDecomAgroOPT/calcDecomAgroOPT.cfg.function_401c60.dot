@@ -1,0 +1,43 @@
+digraph "Control-flow graph for function 'function_401c60(a1, a2)'." {
+  label="Control-flow graph for function 'function_401c60(a1, a2)'.";
+  node [shape=record];
+
+  Node000001DDBF40FB50 [label="{entry:\l  a1\l  a2\l}"];
+  Node000001DDBF40FB50 -> Node000001DDBF411440;
+  Node000001DDBF411440 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  v56\l  v57\l  v58\l}"];
+  Node000001DDBF411440 -> Node000001DDBF410560;
+  Node000001DDBF410560 [label="{  if (v58 == 0):\l}"];
+  Node000001DDBF410560 -> Node000001DDBF4104F0 [label="v58 == 0"];
+  Node000001DDBF410560 -> Node000001DDBF40F8B0 [label="v58 != 0"];
+  Node000001DDBF4104F0 [label="{0x401ca0:\l  return 0\l}"];
+  Node000001DDBF4104F0 -> Node000001DDBF410950;
+  Node000001DDBF40F8B0 [label="{  v59 = 0\l  v60\l  v61\l  result = (((v60 + a1) + 24) + ExtCastExpr\<int32\>(v61))\l}"];
+  Node000001DDBF40F8B0 -> Node000001DDBF410410;
+  Node000001DDBF410950 [label="{exit:\l}"];
+  Node000001DDBF410410 [label="{  while True:\l}"];
+  Node000001DDBF410410 -> Node000001DDBF410100 [label="True"];
+  Node000001DDBF410100 [label="{0x401c86:\l  v62\l}"];
+  Node000001DDBF410100 -> Node000001DDBF40FD10;
+  Node000001DDBF40FD10 [label="{  if (v62 \<= a2):\l}"];
+  Node000001DDBF40FD10 -> Node000001DDBF410A30 [label="v62 \<= a2"];
+  Node000001DDBF40FD10 -> Node000001DDBF40FBC0 [label="v62 \> a2"];
+  Node000001DDBF410A30 [label="{0x401c8d:\l  v63\l}"];
+  Node000001DDBF410A30 -> Node000001DDBF40FC30;
+  Node000001DDBF40FBC0 [label="{  v64 = (v59 + 1)\l}"];
+  Node000001DDBF40FBC0 -> Node000001DDBF40FE60;
+  Node000001DDBF40FC30 [label="{  if ((v63 + v62) \> a2):\l}"];
+  Node000001DDBF40FC30 -> Node000001DDBF410C60 [label="(v63 + v62) \> a2"];
+  Node000001DDBF40FC30 -> Node000001DDBF40FBC0 [label="(v63 + v62) \<= a2"];
+  Node000001DDBF40FE60 [label="{  if (v64 \>= ExtCastExpr\<int32\>(v58)):\l}"];
+  Node000001DDBF40FE60 -> Node000001DDBF4103A0 [label="v64 \>= ExtCastExpr\<int32\>(v58)"];
+  Node000001DDBF40FE60 -> Node000001DDBF40FD80 [label="v64 \< ExtCastExpr\<int32\>(v58)"];
+  Node000001DDBF410C60 [label="{0x401ca0:\l  return result\l}"];
+  Node000001DDBF410C60 -> Node000001DDBF410950;
+  Node000001DDBF4103A0 [label="{break -\> 0x401c9e:\l  break\l}"];
+  Node000001DDBF4103A0 -> Node000001DDBF4111A0;
+  Node000001DDBF40FD80 [label="{  v59 = v64\l  result = (result + 40)\l}"];
+  Node000001DDBF40FD80 -> Node000001DDBF410410;
+  Node000001DDBF4111A0 [label="{0x401ca0:\l  return 0\l}"];
+  Node000001DDBF4111A0 -> Node000001DDBF410950;
+
+}

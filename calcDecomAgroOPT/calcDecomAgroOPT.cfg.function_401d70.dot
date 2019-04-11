@@ -1,0 +1,18 @@
+digraph "Control-flow graph for function 'function_401d70(a1, a2, a3, a4, a5, *a6, a7, a8, a9, a10, a11)'." {
+  label="Control-flow graph for function 'function_401d70(a1, a2, a3, a4, a5, *a6, a7, a8, a9, a10, a11)'.";
+  node [shape=record];
+
+  Node000001DDBF4106B0 [label="{entry:\l  a1\l  a2\l  a3\l  a4\l  a5\l  a6\l  a7\l  a8\l  a9\l  a10\l  a11\l}"];
+  Node000001DDBF4106B0 -> Node000001DDBF4112F0;
+  Node000001DDBF4112F0 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  v56\l  v57\l  v58\l  v59\l  v60\l}"];
+  Node000001DDBF4112F0 -> Node000001DDBF410800;
+  Node000001DDBF410800 [label="{  if ((v58 != 23117) or ((v59 != 17744) or (v60 != 267))):\l}"];
+  Node000001DDBF410800 -> Node000001DDBF410BF0 [label="(v58 != 23117) or ((v59 != 17744) or (v60 != 267))"];
+  Node000001DDBF410800 -> Node000001DDBF410F00 [label="(v58 == 23117) and ((v59 == 17744) and (v60 == 267))"];
+  Node000001DDBF410BF0 [label="{0x401da1:\l  return 0\l}"];
+  Node000001DDBF410BF0 -> Node000001DDBF410790;
+  Node000001DDBF410F00 [label="{0x401d9a:\l  return 1\l}"];
+  Node000001DDBF410F00 -> Node000001DDBF410790;
+  Node000001DDBF410790 [label="{exit:\l}"];
+
+}

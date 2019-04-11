@@ -1,0 +1,18 @@
+digraph "Control-flow graph for function 'function_401820()'." {
+  label="Control-flow graph for function 'function_401820()'.";
+  node [shape=record];
+
+  Node000001DDBF3A3BC0 [label="{entry:\l}"];
+  Node000001DDBF3A3BC0 -> Node000001DDBF2E2E10;
+  Node000001DDBF2E2E10 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52 = function_401ac5()\l  __set_app_type(function_401c0e(2))\l  v53 = -1\l  v54 = -1\l  v55\l  *(__p__fmode()) = v55\l  v56\l  *(__p__commode()) = v56\l  function_401c50()\l  v57\l}"];
+  Node000001DDBF2E2E10 -> Node000001DDBF2F8C90;
+  Node000001DDBF2F8C90 [label="{  if (v57 == 0):\l}"];
+  Node000001DDBF2F8C90 -> Node000001DDBEC16950 [label="v57 == 0"];
+  Node000001DDBF2F8C90 -> Node000001DDBF2F83D0 [label="v57 != 0"];
+  Node000001DDBEC16950 [label="{0x401872:\l  __setusermatherr(4201552)\l}"];
+  Node000001DDBEC16950 -> Node000001DDBF2F83D0;
+  Node000001DDBF2F83D0 [label="{0x40187e:\l  function_401da5()\l  return 0\l}"];
+  Node000001DDBF2F83D0 -> Node000001DDBF2E64C0;
+  Node000001DDBF2E64C0 [label="{exit:\l}"];
+
+}

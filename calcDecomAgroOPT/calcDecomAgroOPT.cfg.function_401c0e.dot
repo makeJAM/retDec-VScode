@@ -1,0 +1,30 @@
+digraph "Control-flow graph for function 'function_401c0e(result)'." {
+  label="Control-flow graph for function 'function_401c0e(result)'.";
+  node [shape=record];
+
+  Node000001DDBF40FAE0 [label="{entry:\l  result\l}"];
+  Node000001DDBF40FAE0 -> Node000001DDBF40FED0;
+  Node000001DDBF40FED0 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  v56\l  v57\l  v58 = GetModuleHandleW(NULL)\l}"];
+  Node000001DDBF40FED0 -> Node000001DDBF410250;
+  Node000001DDBF410250 [label="{  if ((v58 == NULL) or (function_401ba4(PtrToIntCastExpr\<int32\>(v58)) == 0)):\l}"];
+  Node000001DDBF410250 -> Node000001DDBF4109C0 [label="(v58 == NULL) or (function_401ba4(PtrToIntCastExpr\<int32\>(v58)) == 0)"];
+  Node000001DDBF410250 -> Node000001DDBF410D40 [label="(v58 != NULL) and (function_401ba4(PtrToIntCastExpr\<int32\>(v58)) != 0)"];
+  Node000001DDBF4109C0 [label="{0x401c42:\l  return result\l}"];
+  Node000001DDBF4109C0 -> Node000001DDBF4101E0;
+  Node000001DDBF410D40 [label="{0x401c29:\l  v59\l}"];
+  Node000001DDBF410D40 -> Node000001DDBF411130;
+  Node000001DDBF4101E0 [label="{exit:\l}"];
+  Node000001DDBF411130 [label="{  if (v59 == 2):\l}"];
+  Node000001DDBF411130 -> Node000001DDBF40FDF0 [label="v59 == 2"];
+  Node000001DDBF411130 -> Node000001DDBF410B80 [label="v59 != 2"];
+  Node000001DDBF40FDF0 [label="{0x401c42:\l  return 2\l}"];
+  Node000001DDBF40FDF0 -> Node000001DDBF4101E0;
+  Node000001DDBF410B80 [label="{  if (v59 == 3):\l}"];
+  Node000001DDBF410B80 -> Node000001DDBF410170 [label="v59 == 3"];
+  Node000001DDBF410B80 -> Node000001DDBF410090 [label="v59 != 3"];
+  Node000001DDBF410170 [label="{0x401c3a:\l  return 1\l}"];
+  Node000001DDBF410170 -> Node000001DDBF4101E0;
+  Node000001DDBF410090 [label="{0x401c42:\l  return result\l}"];
+  Node000001DDBF410090 -> Node000001DDBF4101E0;
+
+}

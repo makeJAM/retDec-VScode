@@ -1,0 +1,45 @@
+digraph "Control-flow graph for function 'function_401a94(a1, a2)'." {
+  label="Control-flow graph for function 'function_401a94(a1, a2)'.";
+  node [shape=record];
+
+  Node000001DDBF40D380 [label="{entry:\l  a1\l  a2\l}"];
+  Node000001DDBF40D380 -> Node000001DDBF40D700;
+  Node000001DDBF40D700 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  v56\l  v57\l  v58 = a1\l}"];
+  Node000001DDBF40D700 -> Node000001DDBF40D9A0;
+  Node000001DDBF40D9A0 [label="{  if (a1 \>= a2):\l}"];
+  Node000001DDBF40D9A0 -> Node000001DDBF40C4A0 [label="a1 \>= a2"];
+  Node000001DDBF40D9A0 -> Node000001DDBF40DC40 [label="a1 \< a2"];
+  Node000001DDBF40C4A0 [label="{0x401ac2:\l  return 0\l}"];
+  Node000001DDBF40C4A0 -> Node000001DDBF40C900;
+  Node000001DDBF40DC40 [label="{  v59 = 0\l  result\l}"];
+  Node000001DDBF40DC40 -> Node000001DDBF40C2E0;
+  Node000001DDBF40C900 [label="{exit:\l}"];
+  Node000001DDBF40C2E0 [label="{  while True:\l}"];
+  Node000001DDBF40C2E0 -> Node000001DDBF40CDD0 [label="True"];
+  Node000001DDBF40CDD0 [label="{  if (v59 != 0):\l}"];
+  Node000001DDBF40CDD0 -> Node000001DDBF40F450 [label="v59 != 0"];
+  Node000001DDBF40CDD0 -> Node000001DDBF40EC00 [label="v59 == 0"];
+  Node000001DDBF40F450 [label="{  result = v59\l  break\l}"];
+  Node000001DDBF40F450 -> Node000001DDBF40D0E0;
+  Node000001DDBF40EC00 [label="{0x401aa9:\l  v60\l  v61\l  v62\l}"];
+  Node000001DDBF40EC00 -> Node000001DDBF40F7D0;
+  Node000001DDBF40D0E0 [label="{0x401ac2:\l  return result\l}"];
+  Node000001DDBF40D0E0 -> Node000001DDBF40C900;
+  Node000001DDBF40F7D0 [label="{  if (v62 != 0):\l  else:\l}"];
+  Node000001DDBF40F7D0 -> Node000001DDBF40EA40 [label="v62 != 0"];
+  Node000001DDBF40F7D0 -> Node000001DDBF40F530 [label="v62 == 0"];
+  Node000001DDBF40EA40 [label="{0x401aaf:\l  v61 = v58\l  v60 = function_401e50()\l}"];
+  Node000001DDBF40EA40 -> Node000001DDBF40DFC0;
+  Node000001DDBF40F530 [label="{  v61 = a1\l  v60 = v59\l}"];
+  Node000001DDBF40F530 -> Node000001DDBF40DFC0;
+  Node000001DDBF40DFC0 [label="{  v63 = (v61 + 4)\l  v58 = v63\l}"];
+  Node000001DDBF40DFC0 -> Node000001DDBF40E030;
+  Node000001DDBF40E030 [label="{  if (v63 \>= a2):\l}"];
+  Node000001DDBF40E030 -> Node000001DDBF40F4C0 [label="v63 \>= a2"];
+  Node000001DDBF40E030 -> Node000001DDBF40ED50 [label="v63 \< a2"];
+  Node000001DDBF40F4C0 [label="{  result = v60\l  break\l}"];
+  Node000001DDBF40F4C0 -> Node000001DDBF40D0E0;
+  Node000001DDBF40ED50 [label="{  a1 = v63\l  v59 = v60\l}"];
+  Node000001DDBF40ED50 -> Node000001DDBF40C2E0;
+
+}

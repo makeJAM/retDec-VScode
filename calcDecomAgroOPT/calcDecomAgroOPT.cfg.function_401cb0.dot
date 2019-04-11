@@ -1,0 +1,21 @@
+digraph "Control-flow graph for function 'function_401cb0(a1)'." {
+  label="Control-flow graph for function 'function_401cb0(a1)'.";
+  node [shape=record];
+
+  Node000001DDBF410AA0 [label="{entry:\l  a1\l}"];
+  Node000001DDBF410AA0 -> Node000001DDBF410480;
+  Node000001DDBF410480 [label="{  v1\l  v2\l  v3\l  v4\l  v5\l  v6\l  v7\l  v8\l  v9\l  v10\l  v11\l  v12\l  v13\l  v14\l  v15\l  v16\l  v17\l  v18\l  v19\l  v20\l  v21\l  v22\l  v23\l  v24\l  v25\l  v26\l  v27\l  v28\l  v29\l  v30\l  v31\l  v32\l  v33\l  v34\l  v35\l  v36\l  v37\l  v38\l  v39\l  v40\l  v41\l  v42\l  v43\l  v44\l  v45\l  v46\l  v47\l  v48\l  v49\l  v50\l  v51\l  v52\l  v53\l  v54\l  v55\l  v56\l  v57 = __readfsdword(0)\l  v58\l  v59\l  v60 = (PtrToIntCastExpr\<int32\>(&(v58)) ^ v59)\l  __writefsdword(0, PtrToIntCastExpr\<int32\>(&(v57)))\l  v61\l  v62\l  v63\l  v64 = function_401d70(4194304, v60, v62, v63, v61, &(v60), v57, 4202016, (v59 ^ 4202144), 0, v58)\l}"];
+  Node000001DDBF410480 -> Node000001DDBF410DB0;
+  Node000001DDBF410DB0 [label="{  if (v64 != 0):\l}"];
+  Node000001DDBF410DB0 -> Node000001DDBF410E20 [label="v64 != 0"];
+  Node000001DDBF410DB0 -> Node000001DDBF4105D0 [label="v64 == 0"];
+  Node000001DDBF410E20 [label="{0x401cfd:\l  if (function_401c60(4194304, (a1 - 4194304)) != 0):\l}"];
+  Node000001DDBF410E20 -> Node000001DDBF410720 [label="function_401c60(4194304, (a1 - 4194304)) != 0"];
+  Node000001DDBF410E20 -> Node000001DDBF4105D0 [label="function_401c60(4194304, (a1 - 4194304)) == 0"];
+  Node000001DDBF4105D0 [label="{0x401d51:\l  __writefsdword(0, v57)\l  return 0\l}"];
+  Node000001DDBF4105D0 -> Node000001DDBF410640;
+  Node000001DDBF410720 [label="{0x401d17:\l  __writefsdword(0, v57)\l  v65\l  return (v65 \> -1)\l}"];
+  Node000001DDBF410720 -> Node000001DDBF410640;
+  Node000001DDBF410640 [label="{exit:\l}"];
+
+}
