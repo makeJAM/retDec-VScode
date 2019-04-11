@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401e05(a1, a2, a3, a4, a5)'." {
+  label="Control-flow graph for function 'function_401e05(a1, a2, a3, a4, a5)'.";
+  node [shape=record];
+
+  Node000001D420ACCA10 [label="{entry:\l  a1\l  a2\l  a3\l  a4\l  a5\l}"];
+  Node000001D420ACCA10 -> Node000001D420ACC8C0;
+  Node000001D420ACC8C0 [label="{0x401e05:\l  __writefsdword(0, *(IntToPtrCastExpr\<ptr\>((g5 - 16))))\l  *(IntToPtrCastExpr\<ptr\>(g5)) = a1\l  return g4\l}"];
+  Node000001D420ACC8C0 -> Node000001D420ACCA80;
+  Node000001D420ACCA80 [label="{exit:\l}"];
+
+}

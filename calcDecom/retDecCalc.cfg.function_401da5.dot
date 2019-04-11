@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401da5()'." {
+  label="Control-flow graph for function 'function_401da5()'.";
+  node [shape=record];
+
+  Node000001D420ACC620 [label="{entry:\l}"];
+  Node000001D420ACC620 -> Node000001D420ACC380;
+  Node000001D420ACC380 [label="{  result = _controlfp(65536, 196608)\l  g4 = result\l  return result\l}"];
+  Node000001D420ACC380 -> Node000001D420ACC310;
+  Node000001D420ACC310 [label="{exit:\l}"];
+
+}

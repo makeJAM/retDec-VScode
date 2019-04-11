@@ -1,0 +1,25 @@
+digraph "Control-flow graph for function 'function_401d70(a1, a2, a3, a4, a5, *a6, a7, a8, a9, a10, a11)'." {
+  label="Control-flow graph for function 'function_401d70(a1, a2, a3, a4, a5, *a6, a7, a8, a9, a10, a11)'.";
+  node [shape=record];
+
+  Node000001D420ACB740 [label="{entry:\l  a1\l  a2\l  a3\l  a4\l  a5\l  a6\l  a7\l  a8\l  a9\l  a10\l  a11\l}"];
+  Node000001D420ACB740 -> Node000001D420ACC230;
+  Node000001D420ACC230 [label="{0x401d70:\l  g4 = 23117\l}"];
+  Node000001D420ACC230 -> Node000001D420ACBC80;
+  Node000001D420ACBC80 [label="{  if (*(IntToPtrCastExpr\<ptr\>(a1)) != 23117):\l}"];
+  Node000001D420ACBC80 -> Node000001D420ACB0B0 [label="*(IntToPtrCastExpr\<ptr\>(a1)) != 23117"];
+  Node000001D420ACBC80 -> Node000001D420ACBB30 [label="*(IntToPtrCastExpr\<ptr\>(a1)) == 23117"];
+  Node000001D420ACB0B0 [label="{0x401da1:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420ACB0B0 -> Node000001D420ACC5B0;
+  Node000001D420ACBB30 [label="{  v1 = (*(IntToPtrCastExpr\<ptr\>((a1 + 60))) + a1)\l  g4 = v1\l}"];
+  Node000001D420ACBB30 -> Node000001D420ACC460;
+  Node000001D420ACC5B0 [label="{exit:\l}"];
+  Node000001D420ACC460 [label="{  if ((*(IntToPtrCastExpr\<ptr\>(v1)) != 17744) or (*(IntToPtrCastExpr\<ptr\>((v1 + 24))) != 267)):\l}"];
+  Node000001D420ACC460 -> Node000001D420ACC690 [label="(*(IntToPtrCastExpr\<ptr\>(v1)) != 17744) or (*(IntToPtrCastExpr\<ptr\>((v1 + 24))) != 267)"];
+  Node000001D420ACC460 -> Node000001D420ACC0E0 [label="(*(IntToPtrCastExpr\<ptr\>(v1)) == 17744) and (*(IntToPtrCastExpr\<ptr\>((v1 + 24))) == 267)"];
+  Node000001D420ACC690 [label="{0x401da1:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420ACC690 -> Node000001D420ACC5B0;
+  Node000001D420ACC0E0 [label="{0x401d9a:\l  g4 = 1\l  return 1\l}"];
+  Node000001D420ACC0E0 -> Node000001D420ACC5B0;
+
+}

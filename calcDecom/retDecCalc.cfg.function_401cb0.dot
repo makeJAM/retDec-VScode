@@ -1,0 +1,23 @@
+digraph "Control-flow graph for function 'function_401cb0(a1)'." {
+  label="Control-flow graph for function 'function_401cb0(a1)'.";
+  node [shape=record];
+
+  Node000001D420ACC700 [label="{entry:\l  a1\l}"];
+  Node000001D420ACC700 -> Node000001D420ACC150;
+  Node000001D420ACC150 [label="{  v1 = g5\l  g5 = &(v1)\l  v2 = __readfsdword(0)\l  v3 = &(v2)\l  v4 = g6\l  v5 = (g5 ^ g28)\l  g4 = v3\l  __writefsdword(0, v3)\l  v6 = function_401d70(4194304, v5, g8, g11, v4, &(v5), v2, 4202016, (g28 ^ 4202144), 0, v1)\l  g4 = v6\l}"];
+  Node000001D420ACC150 -> Node000001D420ACB270;
+  Node000001D420ACB270 [label="{  if (v6 != 0):\l}"];
+  Node000001D420ACB270 -> Node000001D420ACC000 [label="v6 != 0"];
+  Node000001D420ACB270 -> Node000001D420ACB660 [label="v6 == 0"];
+  Node000001D420ACC000 [label="{  v7 = (a1 - 4194304)\l  g4 = v7\l  v8 = function_401c60(4194304, v7)\l  g4 = v8\l}"];
+  Node000001D420ACC000 -> Node000001D420ACB2E0;
+  Node000001D420ACB660 [label="{0x401d51:\l  g4 = 0\l  __writefsdword(0, v2)\l  g6 = v4\l  g5 = v1\l  return g4\l}"];
+  Node000001D420ACB660 -> Node000001D420ACC1C0;
+  Node000001D420ACB2E0 [label="{  if (v8 != 0):\l}"];
+  Node000001D420ACB2E0 -> Node000001D420ACBC10 [label="v8 != 0"];
+  Node000001D420ACB2E0 -> Node000001D420ACB660 [label="v8 == 0"];
+  Node000001D420ACC1C0 [label="{exit:\l}"];
+  Node000001D420ACBC10 [label="{0x401d17:\l  g4 = (*(IntToPtrCastExpr\<ptr\>((v8 + 36))) \> -1)\l  __writefsdword(0, v2)\l  g6 = v4\l  g5 = v1\l  return g4\l}"];
+  Node000001D420ACBC10 -> Node000001D420ACC1C0;
+
+}

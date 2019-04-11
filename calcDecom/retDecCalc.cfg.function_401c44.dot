@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401c44(rterrnum)'." {
+  label="Control-flow graph for function 'function_401c44(rterrnum)'.";
+  node [shape=record];
+
+  Node000001D420AC9590 [label="{entry:\l  rterrnum\l}"];
+  Node000001D420AC9590 -> Node000001D420ACA860;
+  Node000001D420ACA860 [label="{0x401c44:\l  _amsg_exit(rterrnum)\l  g4 = &(g75)\l}"];
+  Node000001D420ACA860 -> Node000001D420ACA710;
+  Node000001D420ACA710 [label="{exit:\l}"];
+
+}

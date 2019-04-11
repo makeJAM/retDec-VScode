@@ -1,0 +1,45 @@
+digraph "Control-flow graph for function 'function_401a94(a1, a2)'." {
+  label="Control-flow graph for function 'function_401a94(a1, a2)'.";
+  node [shape=record];
+
+  Node000001D420AC7A00 [label="{entry:\l  a1\l  a2\l}"];
+  Node000001D420AC7A00 -> Node000001D420AC84F0;
+  Node000001D420AC84F0 [label="{  v1 = g5\l  v2 = g11\l  v3 = a1\l  g4 = 0\l}"];
+  Node000001D420AC84F0 -> Node000001D420AC8B10;
+  Node000001D420AC8B10 [label="{  if (a1 \>= a2):\l}"];
+  Node000001D420AC8B10 -> Node000001D420AC9360 [label="a1 \>= a2"];
+  Node000001D420AC8B10 -> Node000001D420AC8F70 [label="a1 \< a2"];
+  Node000001D420AC9360 [label="{0x401ac2:\l  return 0\l}"];
+  Node000001D420AC9360 -> Node000001D420AC7C30;
+  Node000001D420AC8F70 [label="{  v4 = 0\l  result\l}"];
+  Node000001D420AC8F70 -> Node000001D420AC8E90;
+  Node000001D420AC7C30 [label="{exit:\l}"];
+  Node000001D420AC8E90 [label="{  while True:\l}"];
+  Node000001D420AC8E90 -> Node000001D420AC8800 [label="True"];
+  Node000001D420AC8800 [label="{  if (v4 != 0):\l}"];
+  Node000001D420AC8800 -> Node000001D420AC9210 [label="v4 != 0"];
+  Node000001D420AC8800 -> Node000001D420AC8330 [label="v4 == 0"];
+  Node000001D420AC9210 [label="{  result = v4\l  break\l}"];
+  Node000001D420AC9210 -> Node000001D420AC9050;
+  Node000001D420AC8330 [label="{0x401aa9:\l  v5\l  v6\l}"];
+  Node000001D420AC8330 -> Node000001D420AC7CA0;
+  Node000001D420AC9050 [label="{0x401ac2:\l  g11 = v2\l  g5 = v1\l  return result\l}"];
+  Node000001D420AC9050 -> Node000001D420AC7C30;
+  Node000001D420AC7CA0 [label="{  if (*(IntToPtrCastExpr\<ptr\>(a1)) != 0):\l  else:\l}"];
+  Node000001D420AC7CA0 -> Node000001D420AC8790 [label="*(IntToPtrCastExpr\<ptr\>(a1)) != 0"];
+  Node000001D420AC7CA0 -> Node000001D420AC7ED0 [label="*(IntToPtrCastExpr\<ptr\>(a1)) == 0"];
+  Node000001D420AC8790 [label="{0x401aaf:\l  v5 = function_401e50()\l  g4 = v5\l  v6 = v3\l}"];
+  Node000001D420AC8790 -> Node000001D420AC82C0;
+  Node000001D420AC7ED0 [label="{  v6 = a1\l  v5 = v4\l}"];
+  Node000001D420AC7ED0 -> Node000001D420AC82C0;
+  Node000001D420AC82C0 [label="{  v7 = (v6 + 4)\l  v3 = v7\l}"];
+  Node000001D420AC82C0 -> Node000001D420AC8410;
+  Node000001D420AC8410 [label="{  if (v7 \>= a2):\l}"];
+  Node000001D420AC8410 -> Node000001D420AC8870 [label="v7 \>= a2"];
+  Node000001D420AC8410 -> Node000001D420AC8720 [label="v7 \< a2"];
+  Node000001D420AC8870 [label="{  result = v5\l  break\l}"];
+  Node000001D420AC8870 -> Node000001D420AC9050;
+  Node000001D420AC8720 [label="{  a1 = v7\l  v4 = v5\l}"];
+  Node000001D420AC8720 -> Node000001D420AC8E90;
+
+}

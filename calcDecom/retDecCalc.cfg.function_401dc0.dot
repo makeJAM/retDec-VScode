@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401dc0(a1, a2, a3)'." {
+  label="Control-flow graph for function 'function_401dc0(a1, a2, a3)'.";
+  node [shape=record];
+
+  Node000001D420ACB430 [label="{entry:\l  a1\l  a2\l  a3\l}"];
+  Node000001D420ACB430 -> Node000001D420ACC7E0;
+  Node000001D420ACC7E0 [label="{  v1 = __readfsdword(0)\l  v2 = &(v1)\l  v3 = (v2 - a3)\l  *(IntToPtrCastExpr\<ptr\>((v3 - 4))) = g6\l  *(IntToPtrCastExpr\<ptr\>((v3 - 8))) = g11\l  *(IntToPtrCastExpr\<ptr\>((v3 - 12))) = g8\l  *(IntToPtrCastExpr\<ptr\>((v3 - 16))) = (g5 ^ g28)\l  *(IntToPtrCastExpr\<ptr\>((v3 - 20))) = a1\l  g4 = v2\l  __writefsdword(0, v2)\l  return g4\l}"];
+  Node000001D420ACC7E0 -> Node000001D420ACB7B0;
+  Node000001D420ACB7B0 [label="{exit:\l}"];
+
+}

@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401c50()'." {
+  label="Control-flow graph for function 'function_401c50()'.";
+  node [shape=record];
+
+  Node000001D420AC9600 [label="{entry:\l}"];
+  Node000001D420AC9600 -> Node000001D420AC9980;
+  Node000001D420AC9980 [label="{0x401c50:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420AC9980 -> Node000001D420ACA4E0;
+  Node000001D420ACA4E0 [label="{exit:\l}"];
+
+}

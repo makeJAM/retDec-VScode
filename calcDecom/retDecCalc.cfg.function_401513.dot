@@ -1,0 +1,36 @@
+digraph "Control-flow graph for function 'function_401513()'." {
+  label="Control-flow graph for function 'function_401513()'.";
+  node [shape=record];
+
+  Node000001D420AC4270 [label="{entry:\l}"];
+  Node000001D420AC4270 -> Node000001D420AC5850;
+  Node000001D420AC5850 [label="{  v1 = g5\l  v2 = &(v1)\l  g5 = v2\l  v3\l  v4 = &(v3)\l  v5\l  v6 = &(v5)\l  g4 = v6\l  v7 = BitCastExpr\<ptr\>(&(g24))\l  v5 = *(IntToPtrCastExpr\<ptr\>((PtrToIntCastExpr\<int32\>(&(g19)) - 16)))\l  v8 = (-4 if g2 else 4)\l  v9 = (v8 + v6)\l  v10 = (v8 + (PtrToIntCastExpr\<int32\>(&(g19)) - 16))\l  v11 = BitCastExpr\<ptr\>(&(v5))\l  *(IntToPtrCastExpr\<ptr\>(v9)) = *(IntToPtrCastExpr\<ptr\>(v10))\l  v12 = (v9 + v8)\l  v13 = (v10 + v8)\l  *(IntToPtrCastExpr\<ptr\>(v12)) = *(IntToPtrCastExpr\<ptr\>(v13))\l  *(IntToPtrCastExpr\<ptr\>((v12 + v8))) = *(IntToPtrCastExpr\<ptr\>((v13 + v8)))\l  v14 = 0\l  g26 = 0\l  g27 = 0\l  v15 = EventRegister(v11, IntToPtrCastExpr\<ptr\>(4199568), &(g20), v7)\l  g4 = v15\l}"];
+  Node000001D420AC5850 -> Node000001D420AC5930;
+  Node000001D420AC5930 [label="{  if (v15 == 0):\l}"];
+  Node000001D420AC5930 -> Node000001D420AC4C80 [label="v15 == 0"];
+  Node000001D420AC5930 -> Node000001D420AC5BD0 [label="v15 != 0"];
+  Node000001D420AC4C80 [label="{0x401562:\l  g4 = 41\l  v16 = *(BitCastExpr\<ptr\>(&(g24)))\l  v17 = EventSetInformation(ExtCastExpr\<int64\>(v16), g25, IntToPtrCastExpr\<ptr\>(2), PtrToIntCastExpr\<int32\>(&(g19)))\l  g4 = v17\l}"];
+  Node000001D420AC4C80 -> Node000001D420AC5BD0;
+  Node000001D420AC5BD0 [label="{0x401581:\l  if (g20 \>= 6):\l}"];
+  Node000001D420AC5BD0 -> Node000001D420AC59A0 [label="g20 \>= 6"];
+  Node000001D420AC5BD0 -> Node000001D420AC5460 [label="g20 \< 6"];
+  Node000001D420AC59A0 [label="{0x401591:\l  g9 = 131072\l  v18 = (v14 \| (g21 & 131072))\l  g4 = v18\l}"];
+  Node000001D420AC59A0 -> Node000001D420AC5A80;
+  Node000001D420AC5460 [label="{0x40164d:\l  *(IntToPtrCastExpr\<ptr\>((g12 - 4))) = 1\l  *(IntToPtrCastExpr\<ptr\>((g12 - 8))) = v14\l  *(IntToPtrCastExpr\<ptr\>((g12 - 12))) = v14\l  *(IntToPtrCastExpr\<ptr\>((g12 - 16))) = PtrToIntCastExpr\<int32\>(\"calculator://\")\l  *(IntToPtrCastExpr\<ptr\>((g12 - 20))) = v14\l  *(IntToPtrCastExpr\<ptr\>((g12 - 24))) = v14\l  ShellExecuteW(&(g75), BitCastExpr\<ptr\>(&(g75)), BitCastExpr\<ptr\>(&(g75)), BitCastExpr\<ptr\>(&(g75)), BitCastExpr\<ptr\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)))\l  g4 = 0\l  g8 = *(IntToPtrCastExpr\<ptr\>(g12))\l  g7 = (g5 ^ (g28 ^ v2))\l  g11 = *(IntToPtrCastExpr\<ptr\>((g12 + 4)))\l  result = function_401680(PtrToIntCastExpr\<int32\>(&(g75)))\l  g4 = result\l  g5 = v1\l  return result\l}"];
+  Node000001D420AC5460 -> Node000001D420AC42E0;
+  Node000001D420AC5A80 [label="{  if (v18 != 0):\l}"];
+  Node000001D420AC5A80 -> Node000001D420AC5AF0 [label="v18 != 0"];
+  Node000001D420AC5A80 -> Node000001D420AC5460 [label="v18 == 0"];
+  Node000001D420AC42E0 [label="{exit:\l}"];
+  Node000001D420AC5AF0 [label="{  v19 = (g23 & 131072)\l  g4 = v19\l}"];
+  Node000001D420AC5AF0 -> Node000001D420AC4CF0;
+  Node000001D420AC4CF0 [label="{  if (v14 == g22):\l}"];
+  Node000001D420AC4CF0 -> Node000001D420AC45F0 [label="v14 == g22"];
+  Node000001D420AC4CF0 -> Node000001D420AC5460;
+  Node000001D420AC45F0 [label="{  if (v19 == g23):\l}"];
+  Node000001D420AC45F0 -> Node000001D420AC5070 [label="v19 == g23"];
+  Node000001D420AC45F0 -> Node000001D420AC5460;
+  Node000001D420AC5070 [label="{0x4015c6:\l  g4 = (ExtCastExpr\<int32\>(*(IntToPtrCastExpr\<ptr\>(4198920))) \| v19)\l  v20 = *(IntToPtrCastExpr\<ptr\>(4198810))\l  v21 = BitCastExpr\<ptr\>(&(g19))\l  v3 = 184549393\l  *(IntToPtrCastExpr\<ptr\>((g12 - 4))) = PtrToIntCastExpr\<int32\>(&(v21))\l  *(IntToPtrCastExpr\<ptr\>((g12 - 8))) = 3\l  *(IntToPtrCastExpr\<ptr\>((g12 - 12))) = v14\l  *(IntToPtrCastExpr\<ptr\>((g12 - 16))) = v14\l  g4 = v4\l  *(IntToPtrCastExpr\<ptr\>((g12 - 20))) = v4\l  *(IntToPtrCastExpr\<ptr\>((g12 - 24))) = g25\l  *(IntToPtrCastExpr\<ptr\>((g12 - 28))) = PtrToIntCastExpr\<int32\>(g24)\l  v22 = EventWriteTransfer(v3, IntToPtrCastExpr\<ptr\>(ExtCastExpr\<int32\>(v20)), IntToPtrCastExpr\<ptr\>(v14), IntToPtrCastExpr\<ptr\>(131072), PtrToIntCastExpr\<int32\>(&(g75)), BitCastExpr\<ptr\>(&(g75)))\l  g4 = v22\l}"];
+  Node000001D420AC5070 -> Node000001D420AC5460;
+
+}

@@ -1,0 +1,38 @@
+digraph "Control-flow graph for function 'function_401ba4(a1)'." {
+  label="Control-flow graph for function 'function_401ba4(a1)'.";
+  node [shape=record];
+
+  Node000001D420ACA630 [label="{entry:\l  a1\l}"];
+  Node000001D420ACA630 -> Node000001D420ACA550;
+  Node000001D420ACA550 [label="{0x401ba4:\l  g4 = function_401dc0(4202112, 12, PtrToIntCastExpr\<int32\>(&(g75)))\l  v1 = 0\l  v2 = *(IntToPtrCastExpr\<ptr\>((g5 + 8)))\l  g4 = v2\l  result\l}"];
+  Node000001D420ACA550 -> Node000001D420ACA9B0;
+  Node000001D420ACA9B0 [label="{  if (v2 == 0):\l}"];
+  Node000001D420ACA9B0 -> Node000001D420ACA8D0 [label="v2 == 0"];
+  Node000001D420ACA9B0 -> Node000001D420ACA400 [label="v2 != 0"];
+  Node000001D420ACA8D0 [label="{0x401c04:\l  g4 = 0\l  result = function_401e05(PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)))\l  g4 = result\l  return result\l}"];
+  Node000001D420ACA8D0 -> Node000001D420ACA160;
+  Node000001D420ACA400 [label="{  if (v2 == -1):\l}"];
+  Node000001D420ACA400 -> Node000001D420ACAE10 [label="v2 == -1"];
+  Node000001D420ACA400 -> Node000001D420AC9F30 [label="v2 != -1"];
+  Node000001D420ACA160 [label="{exit:\l}"];
+  Node000001D420ACAE10 [label="{0x401c04:\l  g4 = 0\l  result = function_401e05(PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)))\l  g4 = result\l  return result\l}"];
+  Node000001D420ACAE10 -> Node000001D420ACA160;
+  Node000001D420AC9F30 [label="{0x401bbe:\l  *(IntToPtrCastExpr\<ptr\>((g5 - 4))) = 0\l}"];
+  Node000001D420AC9F30 -> Node000001D420ACADA0;
+  Node000001D420ACADA0 [label="{  if (*(IntToPtrCastExpr\<ptr\>(v2)) == 23117):\l}"];
+  Node000001D420ACADA0 -> Node000001D420AC9520 [label="*(IntToPtrCastExpr\<ptr\>(v2)) == 23117"];
+  Node000001D420ACADA0 -> Node000001D420ACAC50 [label="*(IntToPtrCastExpr\<ptr\>(v2)) != 23117"];
+  Node000001D420AC9520 [label="{  v3 = *(IntToPtrCastExpr\<ptr\>((v2 + 60)))\l}"];
+  Node000001D420AC9520 -> Node000001D420ACA6A0;
+  Node000001D420ACAC50 [label="{0x401bfd:\l  *(IntToPtrCastExpr\<ptr\>((g5 - 4))) = -2\l  g4 = v1\l  result = function_401e05(PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)), PtrToIntCastExpr\<int32\>(&(g75)))\l  g4 = result\l  return result\l}"];
+  Node000001D420ACAC50 -> Node000001D420ACA160;
+  Node000001D420ACA6A0 [label="{  if (v3 \>= 0):\l}"];
+  Node000001D420ACA6A0 -> Node000001D420ACA7F0 [label="v3 \>= 0"];
+  Node000001D420ACA6A0 -> Node000001D420ACAC50 [label="v3 \< 0"];
+  Node000001D420ACA7F0 [label="{  if (v3 \< 268435456):\l}"];
+  Node000001D420ACA7F0 -> Node000001D420ACA240 [label="v3 \< 268435456"];
+  Node000001D420ACA7F0 -> Node000001D420ACAC50;
+  Node000001D420ACA240 [label="{  v4 = (v3 + v2)\l  g4 = v4\l  *(IntToPtrCastExpr\<ptr\>((g5 - 28))) = v4\l  v5 = g4\l  v6 = (0 if (*(IntToPtrCastExpr\<ptr\>(v5)) != 17744) else v5)\l  v1 = v6\l  *(IntToPtrCastExpr\<ptr\>((g5 - 28))) = v6\l}"];
+  Node000001D420ACA240 -> Node000001D420ACAC50;
+
+}

@@ -1,0 +1,30 @@
+digraph "Control-flow graph for function 'function_40119c(a1, a2, a3, a4, a5, a6, result, a8, a9, a10, a11, a12, a13, result2, a15)'." {
+  label="Control-flow graph for function 'function_40119c(a1, a2, a3, a4, a5, a6, result, a8, a9, a10, a11, a12, a13, result2, a15)'.";
+  node [shape=record];
+
+  Node000001D420A0B5F0 [label="{entry:\l  a1\l  a2\l  a3\l  a4\l  a5\l  a6\l  result\l  a8\l  a9\l  a10\l  a11\l  a12\l  a13\l  result2\l  a15\l}"];
+  Node000001D420A0B5F0 -> Node000001D420A0B890;
+  Node000001D420A0B890 [label="{  v1 = g4\l  *(IntToPtrCastExpr\<ptr\>(v1)) = (TruncCastExpr\<int8\>(v1) + *(BitCastExpr\<ptr\>(&(g4))))\l  v2 = g4\l  *(IntToPtrCastExpr\<ptr\>(v2)) = (TruncCastExpr\<int8\>(v2) + *(BitCastExpr\<ptr\>(&(g4))))\l  v3 = g4\l  *(IntToPtrCastExpr\<ptr\>(v3)) = (TruncCastExpr\<int8\>(v3) + *(BitCastExpr\<ptr\>(&(g4))))\l  v4 = g4\l  v5 = (2 * TruncCastExpr\<int8\>(v4))\l  v6 = (v4 & -256)\l  v7 = (ExtCastExpr\<int32\>(v5) \| v6)\l  g4 = v7\l  v8 = (v5 - *(IntToPtrCastExpr\<ptr\>(v7)))\l  g4 = (ExtCastExpr\<int32\>(v8) \| v6)\l  v9\l  v10 = IntToPtrCastExpr\<ptr\>((v9 + 97))\l  v11 = *(v10)\l  v12 = (v11 + v8)\l  *(v10) = v12\l  v13\l  v14\l  *(IntToPtrCastExpr\<ptr\>(v13)) = __asm_insb(TruncCastExpr\<int16\>(v14))\l  v15\l  v16\l  __asm_arpl(*(IntToPtrCastExpr\<ptr\>((v15 + 108))), TruncCastExpr\<int16\>(v16))\l  g4 = result\l}"];
+  Node000001D420A0B890 -> Node000001D420517400;
+  Node000001D420517400 [label="{  if (v12 == 0):\l}"];
+  Node000001D420517400 -> Node000001D420AC5770 [label="v12 == 0"];
+  Node000001D420517400 -> Node000001D4208EBA10 [label="v12 != 0"];
+  Node000001D420AC5770 [label="{0x401218:\l  return result\l}"];
+  Node000001D420AC5770 -> Node000001D420A0A9B0;
+  Node000001D4208EBA10 [label="{0x4011b0:\l  if (v12 \< v11):\l}"];
+  Node000001D4208EBA10 -> Node000001D420AC53F0 [label="v12 \< v11"];
+  Node000001D4208EBA10 -> Node000001D4201FE7B0 [label="v12 \>= v11"];
+  Node000001D420A0A9B0 [label="{exit:\l}"];
+  Node000001D420AC53F0 [label="{  v17 = IntToPtrCastExpr\<ptr\>(result)\l  *(v17) = (*(v17) + TruncCastExpr\<int8\>(result))\l  return g4\l}"];
+  Node000001D420AC53F0 -> Node000001D420A0A9B0;
+  Node000001D4201FE7B0 [label="{  v18 = *(IntToPtrCastExpr\<ptr\>((a2 + 77)))\l  v19 = (*(IntToPtrCastExpr\<ptr\>((a4 + 97))) & TruncCastExpr\<int8\>(result))\l  g4 = (ExtCastExpr\<int32\>(v19) \| (result & -256))\l  *(IntToPtrCastExpr\<ptr\>(a1)) = __asm_insb(TruncCastExpr\<int16\>(a5))\l  __asm_arpl(*(IntToPtrCastExpr\<ptr\>(((7235937 * v18) + 108))), TruncCastExpr\<int16\>(a2))\l  g4 = result2\l}"];
+  Node000001D4201FE7B0 -> Node000001D4208DE6B0;
+  Node000001D4208DE6B0 [label="{  if ((v19 == 0) or False):\l}"];
+  Node000001D4208DE6B0 -> Node000001D420AC4820 [label="(v19 == 0) or False"];
+  Node000001D4208DE6B0 -> Node000001D42070EB40 [label="(v19 != 0) and True"];
+  Node000001D420AC4820 [label="{0x401218:\l  return result2\l}"];
+  Node000001D420AC4820 -> Node000001D420A0A9B0;
+  Node000001D42070EB40 [label="{  v20 = (__readfsbyte(result2) & TruncCastExpr\<int8\>(result2))\l  v21 = (g4 & -256)\l  g4 = (v21 \| ExtCastExpr\<int32\>(v20))\l  result3 = (ExtCastExpr\<int32\>((*(IntToPtrCastExpr\<ptr\>((2 * a13))) + v20)) \| v21)\l  g4 = result3\l  return result3\l}"];
+  Node000001D42070EB40 -> Node000001D420A0A9B0;
+
+}

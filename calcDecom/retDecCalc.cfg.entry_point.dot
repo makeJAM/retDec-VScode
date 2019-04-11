@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'entry_point()'." {
+  label="Control-flow graph for function 'entry_point()'.";
+  node [shape=record];
+
+  Node000001D420AC7990 [label="{entry:\l}"];
+  Node000001D420AC7990 -> Node000001D420AC7A70;
+  Node000001D420AC7A70 [label="{0x401b30:\l  g4 = function_401799()\l  result = function_4018c3()\l  g4 = result\l  return result\l}"];
+  Node000001D420AC7A70 -> Node000001D420AC8D40;
+  Node000001D420AC8D40 [label="{exit:\l}"];
+
+}

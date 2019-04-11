@@ -1,0 +1,42 @@
+digraph "Control-flow graph for function 'function_401ac5()'." {
+  label="Control-flow graph for function 'function_401ac5()'.";
+  node [shape=record];
+
+  Node000001D420AC88E0 [label="{entry:\l}"];
+  Node000001D420AC88E0 -> Node000001D420AC9440;
+  Node000001D420AC9440 [label="{0x401ac5:\l  g4 = 23117\l}"];
+  Node000001D420AC9440 -> Node000001D420AC7D10;
+  Node000001D420AC7D10 [label="{  if (*(IntToPtrCastExpr\<ptr\>(4194304)) != 23117):\l}"];
+  Node000001D420AC7D10 -> Node000001D420AC86B0 [label="*(IntToPtrCastExpr\<ptr\>(4194304)) != 23117"];
+  Node000001D420AC7D10 -> Node000001D420AC7FB0 [label="*(IntToPtrCastExpr\<ptr\>(4194304)) == 23117"];
+  Node000001D420AC86B0 [label="{0x401b28:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420AC86B0 -> Node000001D420AC8C60;
+  Node000001D420AC7FB0 [label="{  v1 = *(IntToPtrCastExpr\<ptr\>(4194364))\l}"];
+  Node000001D420AC7FB0 -> Node000001D420AC8950;
+  Node000001D420AC8C60 [label="{exit:\l}"];
+  Node000001D420AC8950 [label="{  if (*(IntToPtrCastExpr\<ptr\>((v1 + 4194304))) != 17744):\l}"];
+  Node000001D420AC8950 -> Node000001D420AC90C0 [label="*(IntToPtrCastExpr\<ptr\>((v1 + 4194304))) != 17744"];
+  Node000001D420AC8950 -> Node000001D420AC8CD0 [label="*(IntToPtrCastExpr\<ptr\>((v1 + 4194304))) == 17744"];
+  Node000001D420AC90C0 [label="{0x401b28:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420AC90C0 -> Node000001D420AC8C60;
+  Node000001D420AC8CD0 [label="{  v2 = *(IntToPtrCastExpr\<ptr\>((v1 + 4194328)))\l  g4 = v2\l  result\l}"];
+  Node000001D420AC8CD0 -> Node000001D420AC89C0;
+  Node000001D420AC89C0 [label="{  if (v2 == 267):\l}"];
+  Node000001D420AC89C0 -> Node000001D420AC9280 [label="v2 == 267"];
+  Node000001D420AC89C0 -> Node000001D420AC7D80 [label="v2 != 267"];
+  Node000001D420AC9280 [label="{0x401b15:\l  if (*(IntToPtrCastExpr\<ptr\>((v1 + 4194420))) \< 15):\l}"];
+  Node000001D420AC9280 -> Node000001D420AC92F0 [label="*(IntToPtrCastExpr\<ptr\>((v1 + 4194420))) \< 15"];
+  Node000001D420AC9280 -> Node000001D420AC8480 [label="*(IntToPtrCastExpr\<ptr\>((v1 + 4194420))) \>= 15"];
+  Node000001D420AC7D80 [label="{  if ((v2 != 523) or (*(IntToPtrCastExpr\<ptr\>((v1 + 4194436))) \< 15)):\l}"];
+  Node000001D420AC7D80 -> Node000001D420AC93D0 [label="(v2 != 523) or (*(IntToPtrCastExpr\<ptr\>((v1 + 4194436))) \< 15)"];
+  Node000001D420AC7D80 -> Node000001D420AC8B80 [label="(v2 == 523) and (*(IntToPtrCastExpr\<ptr\>((v1 + 4194436))) \>= 15)"];
+  Node000001D420AC92F0 [label="{0x401b28:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420AC92F0 -> Node000001D420AC8C60;
+  Node000001D420AC8480 [label="{0x401b1e:\l  g4 = 0\l  result = (*(IntToPtrCastExpr\<ptr\>((v1 + 4194536))) != 0)\l  g4 = result\l  return result\l}"];
+  Node000001D420AC8480 -> Node000001D420AC8C60;
+  Node000001D420AC93D0 [label="{0x401b28:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420AC93D0 -> Node000001D420AC8C60;
+  Node000001D420AC8B80 [label="{0x401b09:\l  g4 = 0\l  result = (*(IntToPtrCastExpr\<ptr\>((v1 + 4194552))) != 0)\l  g4 = result\l  return result\l}"];
+  Node000001D420AC8B80 -> Node000001D420AC8C60;
+
+}

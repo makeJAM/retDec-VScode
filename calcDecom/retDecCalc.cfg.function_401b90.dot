@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401b90(*lpTopLevelExceptionFilter)'." {
+  label="Control-flow graph for function 'function_401b90(*lpTopLevelExceptionFilter)'.";
+  node [shape=record];
+
+  Node000001D420ACB040 [label="{entry:\l  lpTopLevelExceptionFilter\l}"];
+  Node000001D420ACB040 -> Node000001D420AC9AD0;
+  Node000001D420AC9AD0 [label="{0x401b90:\l  SetUnhandledExceptionFilter(lpTopLevelExceptionFilter)\l  g4 = 0\l  return NULL\l}"];
+  Node000001D420AC9AD0 -> Node000001D420ACA010;
+  Node000001D420ACA010 [label="{exit:\l}"];
+
+}

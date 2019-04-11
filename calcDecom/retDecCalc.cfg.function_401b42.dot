@@ -1,0 +1,34 @@
+digraph "Control-flow graph for function 'function_401b42(a1)'." {
+  label="Control-flow graph for function 'function_401b42(a1)'.";
+  node [shape=record];
+
+  Node000001D420AC7E60 [label="{entry:\l  a1\l}"];
+  Node000001D420AC7E60 -> Node000001D420AC7B50;
+  Node000001D420AC7B50 [label="{  g4 = a1\l  v1 = *(IntToPtrCastExpr\<ptr\>(a1))\l  g4 = v1\l}"];
+  Node000001D420AC7B50 -> Node000001D420AC7DF0;
+  Node000001D420AC7DF0 [label="{  if ((*(IntToPtrCastExpr\<ptr\>(v1)) != -529697949) or (*(IntToPtrCastExpr\<ptr\>((v1 + 16))) != 3)):\l}"];
+  Node000001D420AC7DF0 -> Node000001D420AC98A0 [label="(*(IntToPtrCastExpr\<ptr\>(v1)) != -529697949) or (*(IntToPtrCastExpr\<ptr\>((v1 + 16))) != 3)"];
+  Node000001D420AC7DF0 -> Node000001D420AC8250 [label="(*(IntToPtrCastExpr\<ptr\>(v1)) == -529697949) and (*(IntToPtrCastExpr\<ptr\>((v1 + 16))) == 3)"];
+  Node000001D420AC98A0 [label="{0x401b7d:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420AC98A0 -> Node000001D420AC7AE0;
+  Node000001D420AC8250 [label="{  v2 = *(IntToPtrCastExpr\<ptr\>((v1 + 20)))\l  g4 = v2\l}"];
+  Node000001D420AC8250 -> Node000001D420ACAB70;
+  Node000001D420AC7AE0 [label="{exit:\l}"];
+  Node000001D420ACAB70 [label="{  if (v2 != 429065504):\l}"];
+  Node000001D420ACAB70 -> Node000001D420ACA390 [label="v2 != 429065504"];
+  Node000001D420ACAB70 -> Node000001D420ACA940 [label="v2 == 429065504"];
+  Node000001D420ACA390 [label="{  if (v2 != 429065505):\l}"];
+  Node000001D420ACA390 -> Node000001D420AC9E50 [label="v2 != 429065505"];
+  Node000001D420ACA390 -> Node000001D420ACA940 [label="v2 == 429065505"];
+  Node000001D420ACA940 [label="{0x401b77:\l  v3\l  g4 = _3f_terminate_40__40_YAXXZ(v3)\l  g4 = 0\l  return 0\l}"];
+  Node000001D420ACA940 -> Node000001D420AC7AE0;
+  Node000001D420AC9E50 [label="{  if (v2 != 429065506):\l}"];
+  Node000001D420AC9E50 -> Node000001D420ACAA20 [label="v2 != 429065506"];
+  Node000001D420AC9E50 -> Node000001D420ACA940;
+  Node000001D420ACAA20 [label="{  if (v2 != 26820608):\l}"];
+  Node000001D420ACAA20 -> Node000001D420ACA5C0 [label="v2 != 26820608"];
+  Node000001D420ACAA20 -> Node000001D420ACA940;
+  Node000001D420ACA5C0 [label="{0x401b7d:\l  g4 = 0\l  return 0\l}"];
+  Node000001D420ACA5C0 -> Node000001D420AC7AE0;
+
+}

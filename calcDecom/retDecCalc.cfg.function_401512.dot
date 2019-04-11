@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401512()'." {
+  label="Control-flow graph for function 'function_401512()'.";
+  node [shape=record];
+
+  Node000001D420AC58C0 [label="{entry:\l}"];
+  Node000001D420AC58C0 -> Node000001D420AC57E0;
+  Node000001D420AC57E0 [label="{0x401512:\l  return g4\l}"];
+  Node000001D420AC57E0 -> Node000001D420AC5C40;
+  Node000001D420AC5C40 [label="{exit:\l}"];
+
+}

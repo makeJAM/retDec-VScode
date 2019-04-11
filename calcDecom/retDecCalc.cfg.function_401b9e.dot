@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401b9e(xcptnum, *pxcptinfoptrs)'." {
+  label="Control-flow graph for function 'function_401b9e(xcptnum, *pxcptinfoptrs)'.";
+  node [shape=record];
+
+  Node000001D420AC94B0 [label="{entry:\l  xcptnum\l  pxcptinfoptrs\l}"];
+  Node000001D420AC94B0 -> Node000001D420AC9750;
+  Node000001D420AC9750 [label="{  result = _XcptFilter(xcptnum, pxcptinfoptrs)\l  g4 = result\l  return result\l}"];
+  Node000001D420AC9750 -> Node000001D420AC9A60;
+  Node000001D420AC9A60 [label="{exit:\l}"];
+
+}

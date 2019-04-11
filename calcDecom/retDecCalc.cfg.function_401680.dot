@@ -1,0 +1,16 @@
+digraph "Control-flow graph for function 'function_401680(a1)'." {
+  label="Control-flow graph for function 'function_401680(a1)'.";
+  node [shape=record];
+
+  Node000001D420AC4430 [label="{entry:\l  a1\l}"];
+  Node000001D420AC4430 -> Node000001D420AC4740;
+  Node000001D420AC4740 [label="{0x401680:\l  if (g7 == g28):\l}"];
+  Node000001D420AC4740 -> Node000001D420AC40B0 [label="g7 == g28"];
+  Node000001D420AC4740 -> Node000001D420AC5540 [label="g7 != g28"];
+  Node000001D420AC40B0 [label="{0x401688:\l  return g4\l}"];
+  Node000001D420AC40B0 -> Node000001D420AC50E0;
+  Node000001D420AC5540 [label="{  v1 = g5\l  v2 = &(v1)\l  v3 = (v2 - 804)\l  v4 = llvm_ctpop_i8(TruncCastExpr\<int8\>(v3))\l  g46 = g4\l  g45 = g7\l  g44 = g9\l  g43 = g6\l  g42 = g11\l  g41 = g8\l  *(BitCastExpr\<ptr\>(&(g52))) = g73\l  *(BitCastExpr\<ptr\>(&(g49))) = g1\l  *(BitCastExpr\<ptr\>(&(g40))) = g3\l  *(BitCastExpr\<ptr\>(&(g39))) = g10\l  *(BitCastExpr\<ptr\>(&(g38))) = g13\l  *(BitCastExpr\<ptr\>(&(g37))) = g70\l  v5 = (4 if ((v4 % 2) == 0) else 0)\l  v6 = (16 if ((v2 & 12) \> 19) else 0)\l  v7 = (64 if (v3 == 0) else 0)\l  v8 = (256 if g74 else 0)\l  v9 = (512 if g71 else 0)\l  v10 = (1024 if g2 else 0)\l  v11 = (16384 if g72 else 0)\l  g50 = ((((((((((ExtCastExpr\<int32\>((&(v1) \< IntToPtrCastExpr\<ptr\>(804))) \| v7) \| ((v3 \>\> 31) & 128)) \| v6) \| ((((803 - v2) & v2) \>\> 31) & 2048)) \| v5) \| v8) \| v9) \| v10) \| v11) \| 2)\l  g36 = 65537\l  g48 = a1\l  v12\l  g51 = &(v12)\l  g47 = g5\l  g33 = a1\l  g31 = -1073740791\l  g32 = 1\l  g34 = 1\l  g35 = 2\l  g4 = g29\l  g4 = PtrToIntCastExpr\<int32\>(SetUnhandledExceptionFilter(NULL))\l  UnhandledExceptionFilter(BitCastExpr\<ptr\>(&(g14)))\l  g4 = 0\l  *(IntToPtrCastExpr\<ptr\>((v2 - 804))) = 1\l  processHandle = GetCurrentProcess()\l  g4 = PtrToIntCastExpr\<int32\>(processHandle)\l  result = TerminateProcess(processHandle, PtrToIntCastExpr\<int32\>(&(g75)))\l  g4 = result\l  return result\l}"];
+  Node000001D420AC5540 -> Node000001D420AC50E0;
+  Node000001D420AC50E0 [label="{exit:\l}"];
+
+}

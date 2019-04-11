@@ -1,0 +1,50 @@
+digraph "Control-flow graph for function 'function_40148b()'." {
+  label="Control-flow graph for function 'function_40148b()'.";
+  node [shape=record];
+
+  Node000001D420AC5B60 [label="{entry:\l}"];
+  Node000001D420AC5B60 -> Node000001D420AC4B30;
+  Node000001D420AC4B30 [label="{  v1 = g4\l  *(IntToPtrCastExpr\<ptr\>(v1)) = (TruncCastExpr\<int8\>(v1) + *(BitCastExpr\<ptr\>(&(g4))))\l  v2 = g4\l  *(IntToPtrCastExpr\<ptr\>(v2)) = (TruncCastExpr\<int8\>(v2) + *(BitCastExpr\<ptr\>(&(g4))))\l  v3\l  v4 = IntToPtrCastExpr\<ptr\>((v3 - 326412801))\l  v5\l  *(v4) = (TruncCastExpr\<int8\>(v5) + *(v4))\l  v6\l  v7 = *(IntToPtrCastExpr\<ptr\>((v6 + 40)))\l  g4 = v7\l  result\l}"];
+  Node000001D420AC4B30 -> Node000001D420AC5230;
+  Node000001D420AC5230 [label="{  if (v7 == 0):\l  else:\l}"];
+  Node000001D420AC5230 -> Node000001D420AC5A10 [label="v7 == 0"];
+  Node000001D420AC5230 -> Node000001D420AC54D0 [label="v7 != 0"];
+  Node000001D420AC5A10 [label="{  result = 0\l  return result\l}"];
+  Node000001D420AC5A10 -> Node000001D420AC4D60;
+  Node000001D420AC54D0 [label="{0x40149f:\l  v8 = *(IntToPtrCastExpr\<ptr\>((v6 + 12)))\l  v9 = *(IntToPtrCastExpr\<ptr\>((v6 + 16)))\l}"];
+  Node000001D420AC54D0 -> Node000001D420AC4F90;
+  Node000001D420AC4D60 [label="{exit:\l}"];
+  Node000001D420AC4F90 [label="{  if (v8 == 0):\l  else:\l}"];
+  Node000001D420AC4F90 -> Node000001D420AC4BA0 [label="v8 == 0"];
+  Node000001D420AC4F90 -> Node000001D420AC55B0 [label="v8 != 0"];
+  Node000001D420AC4BA0 [label="{0x4014da:\l  *(IntToPtrCastExpr\<ptr\>(v7)) = 0\l  goto 0x4014e0\l}"];
+  Node000001D420AC4BA0 -> Node000001D420AC4EB0;
+  Node000001D420AC55B0 [label="{0x4014b0:\l  if (v8 != 1):\l  else:\l}"];
+  Node000001D420AC55B0 -> Node000001D420AC5690 [label="v8 != 1"];
+  Node000001D420AC55B0 -> Node000001D420AC51C0 [label="v8 == 1"];
+  Node000001D420AC4EB0 [label="{0x4014e0:\l  v11 = g4\l}"];
+  Node000001D420AC4EB0 -> Node000001D420AC4580;
+  Node000001D420AC5690 [label="{0x4014dd:\l  goto 0x4014e0\l}"];
+  Node000001D420AC5690 -> Node000001D420AC4EB0;
+  Node000001D420AC51C0 [label="{0x4014b5:\l  v10\l}"];
+  Node000001D420AC51C0 -> Node000001D420AC4A50;
+  Node000001D420AC4580 [label="{  if (*(IntToPtrCastExpr\<ptr\>((v11 + 32))) != 0):\l  else:\l}"];
+  Node000001D420AC4580 -> Node000001D420AC4F20 [label="*(IntToPtrCastExpr\<ptr\>((v11 + 32))) != 0"];
+  Node000001D420AC4580 -> Node000001D420AC4DD0 [label="*(IntToPtrCastExpr\<ptr\>((v11 + 32))) == 0"];
+  Node000001D420AC4A50 [label="{  if (TruncCastExpr\<int8\>(v9) != 0):\l  else:\l}"];
+  Node000001D420AC4A50 -> Node000001D420AC5000 [label="TruncCastExpr\<int8\>(v9) != 0"];
+  Node000001D420AC4A50 -> Node000001D420AC4200 [label="TruncCastExpr\<int8\>(v9) == 0"];
+  Node000001D420AC4F20 [label="{  v12 = function_401e50()\l  g4 = v12\l  result = v12\l}"];
+  Node000001D420AC4F20 -> Node000001D420AC5620;
+  Node000001D420AC4DD0 [label="{  result = v11\l}"];
+  Node000001D420AC4DD0 -> Node000001D420AC5620;
+  Node000001D420AC5000 [label="{0x4014b9:\l  v10 = ((v9 % 256) + 1)\l}"];
+  Node000001D420AC5000 -> Node000001D420AC4C10;
+  Node000001D420AC4200 [label="{  v10 = 256\l}"];
+  Node000001D420AC4200 -> Node000001D420AC4C10;
+  Node000001D420AC5620 [label="{  return result\l}"];
+  Node000001D420AC5620 -> Node000001D420AC4D60;
+  Node000001D420AC4C10 [label="{0x4014c4:\l  *(IntToPtrCastExpr\<ptr\>(v7)) = v10\l  *(IntToPtrCastExpr\<ptr\>((g4 + 8))) = *(IntToPtrCastExpr\<ptr\>((v6 + 20)))\l  *(IntToPtrCastExpr\<ptr\>((g4 + 12))) = *(IntToPtrCastExpr\<ptr\>((v6 + 24)))\l  *(IntToPtrCastExpr\<ptr\>((g4 + 16))) = *(IntToPtrCastExpr\<ptr\>((v6 + 28)))\l  *(IntToPtrCastExpr\<ptr\>((g4 + 20))) = *(IntToPtrCastExpr\<ptr\>((v6 + 32)))\l  goto 0x4014e0\l}"];
+  Node000001D420AC4C10 -> Node000001D420AC4EB0;
+
+}

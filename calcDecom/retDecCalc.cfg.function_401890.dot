@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401890()'." {
+  label="Control-flow graph for function 'function_401890()'.";
+  node [shape=record];
+
+  Node000001D420AC76F0 [label="{entry:\l}"];
+  Node000001D420AC76F0 -> Node000001D420AC5D90;
+  Node000001D420AC5D90 [label="{0x401890:\l  g4 = g63\l  g60 = g63\l  result = __wgetmainargs(&(g55), BitCastExpr\<ptr\>(&(g56)), BitCastExpr\<ptr\>(&(g57)), g62, &(g60))\l  g4 = result\l  g58 = result\l  return result\l}"];
+  Node000001D420AC5D90 -> Node000001D420AC7760;
+  Node000001D420AC7760 [label="{exit:\l}"];
+
+}

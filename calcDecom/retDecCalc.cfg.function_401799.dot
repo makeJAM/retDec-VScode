@@ -1,0 +1,30 @@
+digraph "Control-flow graph for function 'function_401799()'." {
+  label="Control-flow graph for function 'function_401799()'.";
+  node [shape=record];
+
+  Node000001D420AC4350 [label="{entry:\l}"];
+  Node000001D420AC4350 -> Node000001D420AC4120;
+  Node000001D420AC4120 [label="{  v1 = g5\l  lpPerformanceCount = 0\l  v2 = g11\l}"];
+  Node000001D420AC4120 -> Node000001D420AC4190;
+  Node000001D420AC4190 [label="{  if (g28 != 0):\l}"];
+  Node000001D420AC4190 -> Node000001D420AC47B0 [label="g28 != 0"];
+  Node000001D420AC4190 -> Node000001D420AC43C0 [label="g28 == 0"];
+  Node000001D420AC47B0 [label="{  if (g28 != -1153374642):\l}"];
+  Node000001D420AC47B0 -> Node000001D420AC49E0 [label="g28 != -1153374642"];
+  Node000001D420AC47B0 -> Node000001D420AC43C0 [label="g28 == -1153374642"];
+  Node000001D420AC43C0 [label="{0x4017bd:\l  lpSystemTimeAsFileTime\l  g4 = &(lpSystemTimeAsFileTime)\l  GetSystemTimeAsFileTime(BitCastExpr\<ptr\>(&(lpSystemTimeAsFileTime)))\l  v3\l  v4 = (lpSystemTimeAsFileTime ^ v3)\l  g4 = v4\l  processId = GetCurrentProcessId()\l  g4 = processId\l  threadId = GetCurrentThreadId()\l  g4 = threadId\l  v5 = GetTickCount()\l  v6\l  v6 = (((threadId ^ (processId ^ v4)) ^ PtrToIntCastExpr\<int32\>(&(v6))) ^ v5)\l  g4 = &(lpPerformanceCount)\l  QueryPerformanceCounter(BitCastExpr\<ptr\>(&(lpPerformanceCount)))\l  g4 = lpPerformanceCount\l  v7 = (v6 ^ lpPerformanceCount)\l  v8\l}"];
+  Node000001D420AC43C0 -> Node000001D420AC44A0;
+  Node000001D420AC49E0 [label="{0x401812:\l  g29 = (-1 - g28)\l  g11 = *(IntToPtrCastExpr\<ptr\>(PtrToIntCastExpr\<int32\>(&(v2))))\l  return g4\l}"];
+  Node000001D420AC49E0 -> Node000001D420AC5150;
+  Node000001D420AC44A0 [label="{  if (v7 == 0):\l  else:\l}"];
+  Node000001D420AC44A0 -> Node000001D420AC52A0 [label="v7 == 0"];
+  Node000001D420AC44A0 -> Node000001D420AC4970 [label="v7 != 0"];
+  Node000001D420AC5150 [label="{exit:\l}"];
+  Node000001D420AC52A0 [label="{0x40180a:\l  v8 = -1153374642\l}"];
+  Node000001D420AC52A0 -> Node000001D420AC4510;
+  Node000001D420AC4970 [label="{  v8 = v7\l}"];
+  Node000001D420AC4970 -> Node000001D420AC4510;
+  Node000001D420AC4510 [label="{0x40180c:\l  g28 = v8\l  g29 = (-1 - v8)\l  g11 = *(IntToPtrCastExpr\<ptr\>(g12))\l  g5 = v1\l  return lpPerformanceCount\l}"];
+  Node000001D420AC4510 -> Node000001D420AC5150;
+
+}

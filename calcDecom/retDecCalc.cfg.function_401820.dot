@@ -1,0 +1,18 @@
+digraph "Control-flow graph for function 'function_401820()'." {
+  label="Control-flow graph for function 'function_401820()'.";
+  node [shape=record];
+
+  Node000001D420AC4AC0 [label="{entry:\l}"];
+  Node000001D420AC4AC0 -> Node000001D420AC5380;
+  Node000001D420AC5380 [label="{  v1 = function_401ac5()\l  g4 = v1\l  g59 = v1\l  v2 = function_401c0e(2)\l  g4 = v2\l  __set_app_type(v2)\l  g4 = &(g75)\l  g65 = -1\l  g66 = -1\l  v3 = __p__fmode()\l  g4 = PtrToIntCastExpr\<int32\>(v3)\l  *(v3) = g64\l  v4 = __p__commode()\l  g4 = PtrToIntCastExpr\<int32\>(v4)\l  *(v4) = g61\l  g4 = function_401c50()\l}"];
+  Node000001D420AC5380 -> Node000001D420AC6B90;
+  Node000001D420AC6B90 [label="{  if (g30 == 0):\l}"];
+  Node000001D420AC6B90 -> Node000001D420AC61F0 [label="g30 == 0"];
+  Node000001D420AC6B90 -> Node000001D420AC6110 [label="g30 != 0"];
+  Node000001D420AC61F0 [label="{0x401872:\l  __setusermatherr(4201552)\l  g4 = &(g75)\l}"];
+  Node000001D420AC61F0 -> Node000001D420AC6110;
+  Node000001D420AC6110 [label="{0x40187e:\l  function_401da5()\l  g4 = 0\l  return 0\l}"];
+  Node000001D420AC6110 -> Node000001D420AC5310;
+  Node000001D420AC5310 [label="{exit:\l}"];
+
+}

@@ -1,0 +1,11 @@
+digraph "Control-flow graph for function 'function_401db8(**First, **Last)'." {
+  label="Control-flow graph for function 'function_401db8(**First, **Last)'.";
+  node [shape=record];
+
+  Node000001D420ACB3C0 [label="{entry:\l  First\l  Last\l}"];
+  Node000001D420ACB3C0 -> Node000001D420ACB200;
+  Node000001D420ACB200 [label="{0x401db8:\l  _initterm(First, Last)\l  g4 = &(g75)\l}"];
+  Node000001D420ACB200 -> Node000001D420ACCAF0;
+  Node000001D420ACCAF0 [label="{exit:\l}"];
+
+}
